@@ -1,0 +1,20 @@
+.manage-layout {
+  display: flex;
+  margin: 0px 1.975vw;
+  .profile-aside {
+    width: 296px;
+    height: 997px;
+    border-right: 1px solid #DDDDDD;
+    text-align: center;
+    word-break: break-all;
+  }
+  .profile-body-right {
+    margin-left: 16px;
+    flex: 1;
+    .profile-header {
+      box-sizing: border-box;
+      height: 120px;
+      border-bottom: 1px solid #DDDDDD;
+    }
+  }
+}
