@@ -2,7 +2,6 @@
 import { useEffect } from 'react';
 import axios from 'axios'
 import './mock/user'
-import './App.css';
 
 // import TotalDataSpilt  from './page/profile/Dashboard/components/TotalDataSpilt'
 

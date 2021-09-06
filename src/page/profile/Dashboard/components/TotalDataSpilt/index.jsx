@@ -1,7 +1,15 @@
-import React, {useState,useEffect} from 'react'
+import React, {useState,useEffect, Fragment} from 'react'
 import './index.scss'
 import '../../../../../mock/user/data'
 import axios from 'axios'
+
+
+const card_info = [
+  {name: 'view', last: false},
+  {name: 'collect', last: false},
+  {name: 'follow', last: false},
+  {name: 'article', last: true},
+]
 
 
 const TotalDataSpilt = () => {
@@ -19,25 +27,28 @@ const TotalDataSpilt = () => {
     })
   }, [])
 
-  console.log(data);
 
   return (
     <div className="total_data">
-      <div className="data_card">
-        {data.view.total}
-      </div>
-      <div className='divider'></div>
-      <div className="data_card">
-        {data.collect.total}
-      </div>
-      <div className='divider'></div>
-      <div className="data_card">
-        {data.follow.total}
-      </div>
-      <div className='divider'></div>
-      <div className="data_card">
-        {data.article.total}
-      </div>
+        {
+          card_info.map((n, index) => {
+            return (
+              <Fragment key={index}>
+                <div className="data_card">
+                  <h3>{data[n.name].total}</h3>
+                  <div className="card">
+                    <span className={'card_head'}>Total { n.name.charAt(0).toUpperCase() + n.name.slice(1)}</span>
+                    <div className={ data[n.name].flow_num > 0 ? 'card_body up' : 'card_body down'}>
+                      <span>向上</span>
+                      {data[n.name].flow_num > 0 ? '+' + data[n.name].flow_num : data[n.name].flow_num}
+                    </div>
+                  </div>
+                </div>
+                 {n.last ? '' : <div className='divider'></div>} 
+              </Fragment>
+            )
+          })
+        }
     </div>
   )
 }

@@ -1,8 +1,13 @@
-import React from 'react'
-import ManageLayout from '../../components/Layout/ManageLayout'
+import Header from "./Header"
 
-const Profile = () => (
-  <ManageLayout />
-)
+import ManageLayout from "../../components/Layout/ManageLayout"
+
+const Component = ManageLayout(Header)
+
+const Profile = () => {
+  return (
+    <Component />
+  )
+}
 
 export default Profile

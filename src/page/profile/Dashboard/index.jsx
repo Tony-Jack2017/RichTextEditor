@@ -1,11 +1,15 @@
+import TotalDataSpilt from './components/TotalDataSpilt'
+import Chart from './components/Chart'
+import Popular from './components/Popular'
+
 import React from 'react'
 
 const Dashboard = () => {
   return (
     <section>
-      <div></div>
-      <div></div>
-      <div></div>
+      <TotalDataSpilt />
+      <Chart />
+      <Popular />
     </section>
   )
 }

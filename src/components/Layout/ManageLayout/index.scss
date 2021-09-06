@@ -13,8 +13,11 @@
     flex: 1;
     .profile-header {
       box-sizing: border-box;
-      height: 120px;
-      border-bottom: 1px solid #DDDDDD;
+      height: 6.05vw;
+      margin-bottom: 1.224vw;
+    }
+    .profile-content {
+      margin-top: 1.224vw;
     }
   }
 }
