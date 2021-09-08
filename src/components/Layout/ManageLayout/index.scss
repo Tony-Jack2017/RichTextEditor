@@ -4,9 +4,14 @@
   .profile-aside {
     width: 296px;
     height: 997px;
+    padding: 1.48vw;
     border-right: 1px solid #DDDDDD;
     text-align: center;
     word-break: break-all;
+    .logo {
+      height: 120px;
+      margin-bottom: 96px;
+    }
   }
   .profile-body-right {
     margin-left: 16px;

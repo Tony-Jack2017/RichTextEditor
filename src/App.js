@@ -1,4 +1,4 @@
-
+import { BrowserRouter } from 'react-router-dom'
 import { useEffect } from 'react';
 import axios from 'axios'
 import './mock/user'
@@ -18,11 +18,13 @@ function App() {
     getUserList()
   }, [])
   return (
-    <div className="App">
-      {/* <TotalDataSpilt /> */}
-      <Profile />
-    </div>
-  );
+    <BrowserRouter>
+      <div className="App">
+        {/* <TotalDataSpilt /> */}
+        <Profile />
+      </div>
+    </BrowserRouter>
+  )
 }
 
 export default App;

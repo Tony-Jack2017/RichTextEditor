@@ -8,10 +8,11 @@ const ManageLayout = (Header) => {
     return (
       <div className={'manage-layout'}>
         <div className={'profile-body-left profile-aside'}>
-          <div>
+          <div className='logo'>
             logo
           </div>
           <div>
+            11111111
           </div>
         </div>
         <div className={'profile-body-right'}>
