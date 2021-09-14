@@ -2,17 +2,18 @@ import React from 'react'
 import './index.scss'
 
 import Dashboard from '../../../page/profile/Dashboard'
+import UserAdminNav from '../../Nav/UserAdminNav'
 
 const ManageLayout = (Header) => {
   function ManageLayoutWrap() {
     return (
       <div className={'manage-layout'}>
-        <div className={'profile-body-left profile-aside'}>
+        <div className={'profile-body-left profile-aside siderbar'}>
           <div className='logo'>
             logo
           </div>
-          <div>
-            11111111
+          <div className='siderbar-menu'>
+            <UserAdminNav/>
           </div>
         </div>
         <div className={'profile-body-right'}>

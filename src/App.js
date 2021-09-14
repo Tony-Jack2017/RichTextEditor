@@ -1,29 +1,18 @@
-import { BrowserRouter } from 'react-router-dom'
-import { useEffect } from 'react';
-import axios from 'axios'
 import './mock/user'
+import { Switch, Route } from 'react-router-dom'
 
-// import TotalDataSpilt  from './page/profile/Dashboard/components/TotalDataSpilt'
+import MainLayout from './components/Layout/MainLayout'
+import Profile from './page/profile'
 
-import Profile from './page/profile';
-
-
-const getUserList = () => {
-  axios.get('/api/get_userList', {dataType: 'json'}).then(resp => {
-  })
-}
 
 function App() {
-  useEffect(() => {
-    getUserList()
-  }, [])
   return (
-    <BrowserRouter>
-      <div className="App">
-        {/* <TotalDataSpilt /> */}
-        <Profile />
-      </div>
-    </BrowserRouter>
+    <div className="App">
+      <Switch>
+        <Route path='/profile' component={Profile} />
+        <Route path='/' component={MainLayout} />
+      </Switch>
+    </div>
   )
 }
 
