@@ -10,7 +10,7 @@ const UserAdminNav = () => {
           navList.map(item => {
             return (
               <li className='item' key={item.path}>
-                <NavLink to={item.path}>{item.title}</NavLink>
+                <NavLink to={`/profile${item.path}`}>{item.title}</NavLink>
               </li>
             )
           })

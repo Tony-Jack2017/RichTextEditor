@@ -1,7 +1,9 @@
+import './index.scss'
+
 const About = () => {
   return (
     <div>
-      This is About Component
+      If you have interest, welcome join us
     </div>
   )
 }

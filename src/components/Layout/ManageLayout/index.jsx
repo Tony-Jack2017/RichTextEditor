@@ -9,7 +9,7 @@ const ManageLayout = (Header) => {
     return (
       <div className={'manage-layout'}>
         <div className={'profile-body-left profile-aside siderbar'}>
-          <div className='logo'>
+          <div className='avator'>
             logo
           </div>
           <div className='siderbar-menu'>
