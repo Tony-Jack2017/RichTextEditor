@@ -1,0 +1,45 @@
+.carousel {
+  position: relative;
+  width: 500px;
+  border: 1px solid black;
+  height: 300px;
+  margin: 20px auto;
+  overflow: hidden;
+  .operation {
+    button {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .last {
+      left: 10px;
+    }
+    .next {
+      right: 10px;
+    }
+  }
+  .img {
+    position: absolute;
+    width: 500px;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    img {
+      width: 500px;
+      height: 100%;
+    }
+  }
+  .last {
+    z-index: -1;
+    transform: translateX(500px);
+  }
+  .next {
+    z-index: -1;
+    transform: translateX(-500px);
+  }
+  .active {
+    z-index: 1;
+    transform: translateX(0px);
+  }
+}

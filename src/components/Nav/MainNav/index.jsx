@@ -21,7 +21,10 @@ const MainNav = () => {
         </ul>
       </div>
       <div className='header-right'>
-        This is avator
+        <div className='entry'>
+          <button className='sign-in'>Sign in</button>
+          <button className='sign-up'>Sign up</button>
+        </div>
       </div>
     </div>
   )

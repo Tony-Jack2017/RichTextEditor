@@ -1,11 +1,13 @@
 import './index.scss'
 
+import Carousel from '../../components/common/Carousel'
+
 const Gallery = () => {
   return (
     <div id="gallery">
       <div className='content'>
         <div className='carousel'>
-          this is carousel
+          <Carousel />
         </div>
         <div className='photo-album'>
           {
