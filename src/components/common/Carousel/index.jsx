@@ -1,9 +1,12 @@
 import { useState } from 'react'
 import styles from './index.module.scss'
+import { throttle } from '../../../utils/index'
+
 import test1 from '../../../asset/img/test1.jpg'
 import test2 from '../../../asset/img/test2.jpg'
 import test3 from '../../../asset/img/test3.jpg'
 import test4 from '../../../asset/img/test1.png'
+
 
 const Carousel = (props) => {
 
@@ -12,7 +15,7 @@ const Carousel = (props) => {
   const [next, setNext] = useState(2)
 
   const handleClick = (type) => {
-    
+
     if(type === 1){
       setLast(active)
       setActive(next)
@@ -27,8 +30,8 @@ const Carousel = (props) => {
   return (
     <div className={styles['carousel']}>
       <div className={styles['operation']}>
-        <button className={styles['last']} onClick={() => handleClick(2)}>上一个</button>
-        <button className={styles['next']} onClick={() => handleClick(1)}>下一个</button>
+        <button className={styles['last']} onClick={throttle(500, () => {handleClick(1)})}>上一个</button>
+        <button className={styles['next']} onClick={throttle(500, () => {handleClick(2)})}>下一个</button>
       </div>
       {
         [test1, test2, test3, test4].map((n, index) => {
