@@ -1,0 +1,28 @@
+#login {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  .show {
+    flex: 1;
+  }
+  #login-form {
+    width: 40%;
+    position: relative;
+    text-align: center;
+    .content {
+      width: 100%;
+      position: absolute;
+      top: 40%;
+      transform: translateY(-50%);
+      .form {
+        width: 40%;
+        margin: 0 auto;
+        .submit {
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
