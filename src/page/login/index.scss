@@ -15,11 +15,20 @@
       top: 40%;
       transform: translateY(-50%);
       .form {
-        width: 40%;
+        width: 60%;
         margin: 0 auto;
+        .field {
+          height: 70px;
+          padding: 0 20px;
+          & > input {
+            height: 40px;
+            font-size: 20px;
+          }
+        }
         .submit {
           input {
-            width: 100%;
+            margin-left: 10%;
+            width: 90%;
           }
         }
       }
