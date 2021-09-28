@@ -11,10 +11,9 @@ const Gallery = () => {
         </div>
         <div className='photo-album'>
           {
-            [1,1,1,1,1,1,1,1,1,1,1,1,1,1].map( (n, index) => {
+            [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].map( (n, index) => {
               return (
                 <div className='photo' key={index}>
-
                 </div>
               )
             })

@@ -22,8 +22,12 @@ const MainNav = () => {
       </div>
       <div className='header-right'>
         <div className='entry'>
-          <button className='sign-in'>Sign in</button>
-          <button className='sign-up'>Sign up</button>
+          <NavLink to="/login">
+            <button className='sign-in'>Sign in</button>
+          </NavLink>
+          <NavLink to="/sign">
+            <button className='sign-up'>Sign up</button>
+          </NavLink>
         </div>
       </div>
     </div>
