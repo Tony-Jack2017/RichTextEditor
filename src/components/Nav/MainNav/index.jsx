@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import './index.scss'
 
-const MainNav = () => {
+const MainNav = (props) => {
   return (
     <div className='header'>
       <div className='header-left logo'>
