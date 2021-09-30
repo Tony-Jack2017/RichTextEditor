@@ -1,39 +1,47 @@
 .header {
   display: flex;
   height: 100px;
+
   .logo {
     width: 300px;
     text-align: center;
     line-height: 100px;
   }
+
   .header-nav {
     flex: 1;
     display: flex;
     justify-content: flex-end;
+
     ul {
       display: flex;
       list-style-type: none;
       padding: 0;
       justify-content: space-between;
+
       li {
         padding: 20px;
+
         a {
           text-decoration: none;
         }
       }
     }
   }
+
   .header-right {
     width: 300px;
     text-align: center;
     line-height: 100px;
+
     .entry {
-      & > button {
+      button {
         padding: 20px;
         margin-left: 10px;
-        .sign-up {
-          background-color: #49ad09;
-        }
+      }
+
+      .sign-up {
+        background-color: #49ad09;
       }
     }
   }
