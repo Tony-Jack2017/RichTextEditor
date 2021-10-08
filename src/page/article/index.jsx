@@ -14,7 +14,6 @@ const Article = () => {
                     This is commite
                 </aside>
             </div>
-
             <aside className={styles['article-sidebar']}>
                 This article struct
             </aside>
