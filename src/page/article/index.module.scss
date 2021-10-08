@@ -1,0 +1,11 @@
+.article {
+  max-width: 1460px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-column-gap: 20px;
+  height: calc(100vh - 100px);
+  .article-header {
+    margin-top: 20px;
+  }
+}
