@@ -6,7 +6,7 @@ import Profile from './page/profile'
 import Login from './page/login'
 import Sign from './page/sign'
 
-function App() {
+function App(props) {
     return (
         <div className="App">
             <Switch>

@@ -1,12 +1,3 @@
-/*
- * @Author: GanWeiren
- * @Date: 2021-09-26 11:25:15
- * @LastEditTime: 2021-09-26 13:59:15
- * @LastEditors: Please set LastEditors
- * @Description: Utils file
- * @FilePath: \website\src\utils\index.js
- */
-
 /**
  * debounce
  * This method is for debounce function

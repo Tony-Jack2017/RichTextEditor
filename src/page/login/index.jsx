@@ -4,12 +4,16 @@ import CoverImg from '../../asset/page/login/cover.jpg'
 
 import '../../mock/user/login'
 import axios from 'axios'
+import { connect } from "react-redux";
+import createTokenAction from "../../redux/actions/token_action";
+import { ADDTOKEN } from "../../redux/constant";
 
 const Login = (props) => {
 
     const login = useRef(null)
 
     const handleSubmite = (event) => {
+
         if (event.preventDefault) {
             event.preventDefault();
         } else {
@@ -20,8 +24,7 @@ const Login = (props) => {
             username: login.current.username.value,
             password: login.current.password.value
         }).then(resp => {
-            window.localStorage.token = resp.data.token
-            window.localStorage.userId = resp.data.userId
+            props.add_token(resp.data.token)
             props.history.push('/home')
         })
     }
@@ -58,4 +61,14 @@ const Login = (props) => {
     )
 }
 
-export default Login
+const mapStateToProps = state => null
+const mapDispatchToProps = (dispatch) => {
+    return {
+        add_token: token => dispatch(createTokenAction(ADDTOKEN,token))
+    }
+}
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(Login)
