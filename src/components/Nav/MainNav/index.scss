@@ -1,11 +1,11 @@
 .header {
   display: flex;
-  height: 100px;
+  height: 60px;
 
   .logo {
     width: 300px;
     text-align: center;
-    line-height: 100px;
+    line-height: 60px;
   }
 
   .header-nav {
@@ -20,7 +20,7 @@
       justify-content: space-between;
 
       li {
-        padding: 20px;
+        padding: 0 20px;
 
         a {
           text-decoration: none;
@@ -32,7 +32,7 @@
   .header-right {
     width: 300px;
     text-align: center;
-    line-height: 100px;
+    line-height: 60px;
 
     .entry {
       button {

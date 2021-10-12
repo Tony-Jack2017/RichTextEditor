@@ -1,0 +1,65 @@
+.poster {
+  .article-title {
+    border-bottom: 1px solid #dddddd;
+
+    h1 {
+      margin: 10px 0;
+      font-size: 3rem;
+    }
+
+    h2 {
+      margin: 5px 0;
+      color: #797777;
+    }
+
+    .heat-list {
+      display: grid;
+      margin: 10px 0;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+
+      .heat {
+        display: flex;
+
+        .icon {
+          width: 20%;
+        }
+
+        .heat-content {
+          flex: 1
+        }
+      }
+    }
+  }
+
+  .article-author {
+    display: flex;
+    height: 100px;
+    padding: 20px 0;
+    border-bottom: 1px solid #dddddd;
+
+    .author_avatar {
+      margin-right: 20px;
+
+      img {
+        height: 100%;
+        border: 1px solid #dddddd;
+        border-radius: 50%;
+      }
+    }
+
+    .author_info {
+      flex: 1;
+
+      & > p {
+        margin: 5px 0;
+      }
+    }
+
+    .follow {
+      width: 8%;
+    }
+
+  }
+}
