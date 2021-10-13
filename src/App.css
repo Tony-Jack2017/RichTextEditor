@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   min-width: 1024px;
+  background-color: rgba(245,247,250, 1);
 }
 
 @media (prefers-reduced-motion: no-preference) {

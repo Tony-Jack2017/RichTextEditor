@@ -1,10 +1,12 @@
 import styles from './index.module.scss'
 
+import Sidebar from "./components/Sidebar";
+
 const Home = () => {
     return (
         <div id={styles.home}>
             <div className={styles.left}>
-                This is left block
+                <Sidebar />
             </div>
             <div className={styles.middle}>
                 This is middle block

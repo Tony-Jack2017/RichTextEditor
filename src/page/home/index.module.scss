@@ -9,8 +9,14 @@
   }
   .middle {
     grid-column: 2 / 7;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid rgba(229,231,235,1);
   }
   .right {
     grid-column: 7 / 9;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid rgba(229,231,235,1);
   }
 }
