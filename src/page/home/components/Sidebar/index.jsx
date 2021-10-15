@@ -1,6 +1,7 @@
 import styles from './index.module.scss'
 
 import Follow from "./components/Follow";
+import Category from "./components/Category";
 
 const Sidebar = () => {
     return (
@@ -13,7 +14,7 @@ const Sidebar = () => {
             </div>
             <hr/>
             <div className={styles.category}>
-                This is interest category
+                <Category />
             </div>
             <hr/>
             <div className={styles.follow}>
