@@ -1,0 +1,23 @@
+.popular-content {
+  background-color: #ffffff;
+  padding: 10px;
+  .learn-more {
+    display: inline-block;
+    color: rgba(41,98,255,1);
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid rgba(41,98,255,1);
+    border-radius: 20px;
+    padding: 8px 8px;
+    a {
+      color: rgba(41,98,255,1);
+      text-decoration: none;
+    }
+    &:hover {
+      background: rgba(41,98,255,1);
+      & > a {
+        color: #ffffff;
+      }
+    }
+  }
+}

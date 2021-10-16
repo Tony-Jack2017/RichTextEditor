@@ -2,6 +2,7 @@ import styles from './index.module.scss'
 
 import Sidebar from "./components/Sidebar";
 import ArticleList from './components/ArticleList'
+import Popular from './components/Popular'
 
 const Home = () => {
     return (
@@ -13,7 +14,7 @@ const Home = () => {
                 <ArticleList />
             </div>
             <div className={styles.right}>
-                This is right block
+                <Popular />
             </div>
         </div>
     )

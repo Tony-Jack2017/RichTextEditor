@@ -1,0 +1,25 @@
+.prefix {
+  position: absolute;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 15px;
+  height: 100%;
+  align-items: center;
+}
+
+.input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 30px;
+}
+
+.suffix {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 15px;
+  height: 100%;
+  align-items: center;
+}

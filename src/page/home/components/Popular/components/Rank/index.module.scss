@@ -1,0 +1,30 @@
+.rank-header {
+  h3 {
+    text-align: left;
+  }
+}
+.rank-list {
+  .number {
+    display: flex;
+    border-bottom: 1px solid #dddddd;
+    .number-ranking {
+      margin: 0px 20px 0px 0px
+    }
+    .number-content {
+      flex: 1;
+      text-align: left;
+      h2 {
+        margin: 0px;
+      }
+      p {
+        margin: 0px
+      }
+      .content-footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+      }
+
+    }
+  }
+}
