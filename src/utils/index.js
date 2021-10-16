@@ -1,12 +1,26 @@
-
 /**
  * debounce
  * This method is for debounce function
  * @param {number} time // execute period
- * @param {function} function // execute fundtion
+ * @param {function} execute // execute function
+ * @param {blooean} immediate // execute now
  */
-const debounce = (time, functionn) => {
-
+const debounce = (time, execute, immediate) => {
+  let timer = null
+  return function () {
+    if(time) {
+      clearTimeout(timer)
+    }
+    let context = this
+    let args = arguments
+    let callNow = !timer
+    if(immediate) {
+      if(callNow) execute.apply(context, args)
+      timer = setTimeout(()=>{}, time)
+    } else {
+      timer = setTimeout(execute.apply(context, args), time)
+    }
+  }
 }
 
 /**
@@ -29,5 +43,6 @@ const throttle = (time, execute) => {
     }
   }
 }
+
 
 export { debounce, throttle }

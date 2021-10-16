@@ -1,8 +1,33 @@
 import axios from "axios";
 
-export const request = (config) => {
-  const instance = axios.create({
-
+// create an axios instance
+  const service = axios.create({
+    baseURL: '', // url = base url + request url
+    timeout: 3000 //request timeout
   })
-  return instance
-}
+  /**
+   * 请求拦截
+   */
+  service.interceptors.request.use(
+    config => {
+      if(window.localStorage.token){
+        config.headers['Authorization'] = window.localStorage.token
+      }
+      return config
+    }
+  )
+  /**
+   * 响应拦截
+   */
+  service.interceptors.response.use(
+    response => {
+      const res = response.data
+      if(res.code !== 200) {
+        alert(res.msg)
+      }else{
+        return res
+      }
+    }
+  )
+
+export default service

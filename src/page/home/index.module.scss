@@ -1,0 +1,16 @@
+#home {
+  max-width: 1900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 20px;
+  .left {
+    grid-column: 1 / 2;
+  }
+  .middle {
+    grid-column: 2 / 7;
+  }
+  .right {
+    grid-column: 7 / 9;
+  }
+}
