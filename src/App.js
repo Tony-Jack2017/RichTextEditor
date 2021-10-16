@@ -1,5 +1,6 @@
 import './mock/user'
 import {Switch, Route} from 'react-router-dom'
+import './App.css'
 
 import MainLayout from './components/Layout/MainLayout'
 import Profile from './page/profile'

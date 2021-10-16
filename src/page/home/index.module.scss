@@ -1,16 +1,19 @@
 #home {
-  max-width: 1900px;
+  max-width: 1920px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   grid-column-gap: 20px;
   .left {
     grid-column: 1 / 2;
   }
   .middle {
-    grid-column: 2 / 7;
+    grid-column: 2 / 6;
   }
   .right {
-    grid-column: 7 / 9;
+    grid-column: 6 / 8;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid rgba(229,231,235,1);
   }
 }
