@@ -2,7 +2,10 @@ import React from 'react'
 import './index.scss'
 
 import Dashboard from '../../../page/profile/Dashboard'
+import Personal from "../../../page/profile/Personal";
+
 import UserAdminNav from '../../Nav/UserAdminNav'
+import {Route} from "react-router-dom";
 
 const ManageLayout = (Header) => {
     function ManageLayoutWrap() {
@@ -22,7 +25,8 @@ const ManageLayout = (Header) => {
                     </header>
                     <div style={{borderBottom: '1px solid #DDDDDD'}}></div>
                     <article className='profile-content'>
-                        <Dashboard/>
+                        <Route path='/profile/dashboard' component={Dashboard} />
+                        <Route path='/profile/personal' component={Personal} />
                     </article>
                 </div>
             </div>

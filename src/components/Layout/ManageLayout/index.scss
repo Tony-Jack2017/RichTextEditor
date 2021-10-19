@@ -1,8 +1,10 @@
 .manage-layout {
   display: flex;
-  margin: 0px 1.975vw;
+  max-width: 1920px;
+  margin: 0px auto;
   .profile-aside {
-    width: 296px;
+    width: 10.8vw;
+    min-width: 200px;
     height: 997px;
     padding: 1.48vw;
     border-right: 1px solid #DDDDDD;
@@ -18,7 +20,7 @@
     flex: 1;
     .profile-header {
       box-sizing: border-box;
-      height: 6.05vw;
+      min-height: 6.05vw;
       margin-bottom: 1.224vw;
     }
     .profile-content {
