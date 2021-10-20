@@ -6,6 +6,7 @@ import Personal from "../../../page/profile/Personal";
 
 import UserAdminNav from '../../Nav/UserAdminNav'
 import {Route} from "react-router-dom";
+import Setting from '../../../page/profile/Setting';
 
 const ManageLayout = (Header) => {
     function ManageLayoutWrap() {
@@ -27,6 +28,7 @@ const ManageLayout = (Header) => {
                     <article className='profile-content'>
                         <Route path='/profile/dashboard' component={Dashboard} />
                         <Route path='/profile/personal' component={Personal} />
+                        <Route path="/profile/setting" component={Setting} />
                     </article>
                 </div>
             </div>
