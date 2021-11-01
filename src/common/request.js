@@ -14,6 +14,10 @@ service.interceptors.request.use(
             config.headers['Authorization'] = window.localStorage.token
         }
         return config
+    },
+    error => {
+        console.log('请求拦截处出现错误')
+        console.log(error)
     }
 )
 /**
@@ -21,12 +25,15 @@ service.interceptors.request.use(
  */
 service.interceptors.response.use(
     response => {
-        const res = response.data
-        if (res.code !== 200) {
-            // alert(res.msg)
+        if (response.status !== 200) {
+            console.log('请求状态码不是200')
         } else {
-            return res
+            return response.data
         }
+    },
+    error => {
+        console.log('响应拦截处出现错误')
+        console.log(error)
     }
 )
 

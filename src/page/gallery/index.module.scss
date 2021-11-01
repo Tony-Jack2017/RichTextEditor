@@ -1,5 +1,7 @@
 #gallery {
   //height: 200px;
+  max-width: 1620px;
+  margin: 0px auto;
   .content {
     //height: 100px;
 
@@ -7,8 +9,6 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px 20px;
-      margin: auto 100px;
-
       .photo {
         border: 1px solid #797777;
         border-radius: 8px;
