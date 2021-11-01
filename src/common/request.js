@@ -2,8 +2,8 @@ import axios from "axios";
 
 // create an axios instance
 const service = axios.create({
-    baseURL: '', // url = base url + request url
-    timeout: 3000 //request timeout
+    baseURL: "http://localhost:8000/api/v1", // url = base url + request url
+    timeout: 15000 //request timeout
 })
 /**
  * 请求拦截
@@ -23,7 +23,7 @@ service.interceptors.response.use(
     response => {
         const res = response.data
         if (res.code !== 200) {
-            alert(res.msg)
+            // alert(res.msg)
         } else {
             return res
         }

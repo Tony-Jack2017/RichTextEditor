@@ -2,26 +2,24 @@ import {useRef} from 'react'
 import './index.scss'
 import CoverImg from '../../asset/page/login/cover.jpg'
 
-import '../../mock/user/login'
-import axios from 'axios'
 import { connect } from "react-redux";
 import createTokenAction from "../../redux/actions/token_action";
 import { ADDTOKEN } from "../../redux/constant";
+import { userLogin } from "../../api/user";
 
 const Login = (props) => {
 
     const login = useRef(null)
 
-    const handleSubmite = (event) => {
+    const handleSubmit = (event) => {
 
         if (event.preventDefault) {
             event.preventDefault();
         } else {
             window.event.returnValue = false;
         }
-
-        axios.post('/user/login', {
-            username: login.current.username.value,
+        userLogin({
+            account: login.current.username.value,
             password: login.current.password.value
         }).then(resp => {
             props.add_token(resp.data.token)
@@ -41,7 +39,7 @@ const Login = (props) => {
                         <span>使用账号登录该网站</span>
                     </div>
                     <div className='form'>
-                        <form ref={login} onSubmit={handleSubmite}>
+                        <form ref={login} onSubmit={handleSubmit}>
                             <div className='field'>
                                 {/* <label></label> */}
                                 <input name="username" type='text' placeholder='用户名/邮箱'/>
@@ -61,7 +59,7 @@ const Login = (props) => {
     )
 }
 
-const mapStateToProps = state => null
+const mapStateToProps = state => {}
 const mapDispatchToProps = (dispatch) => {
     return {
         add_token: token => dispatch(createTokenAction(ADDTOKEN,token))

@@ -2,8 +2,16 @@ import styles from './index.module.scss'
 
 import articleTest from '../../../../asset/mock/article-test.jpeg'
 import avatarHome from '../../../../asset/mock/avatar-home.jpeg'
+import {getArticleAll} from "../../../../api/article";
 
 const ArticleList = () => {
+
+    getArticleAll().then(
+        resp => {
+            console.log(resp)
+        }
+    )
+
     return (
         <div className={styles['article-list']}>
             <div className={styles['my-feed']}>

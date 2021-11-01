@@ -6,6 +6,7 @@ import Home from '../../../page/home'
 import Gallery from '../../../page/gallery'
 import About from '../../../page/about'
 import Article from "../../../page/article";
+import WriteArticle from "../../../page/article/components/write_space";
 
 const MainLayout = () => {
     return (
@@ -19,6 +20,7 @@ const MainLayout = () => {
                 <Route path='/gallery' component={Gallery}/>
                 <Route path='/about' component={About}/>
                 <Route path='/article' component={Article}/>
+                <Route path='/create/article' component={WriteArticle}/>
             </div>
         </div>
     )
