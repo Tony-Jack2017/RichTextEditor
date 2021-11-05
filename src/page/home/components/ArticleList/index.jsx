@@ -37,7 +37,7 @@ const ArticleList = () => {
                                         <img src={avatarHome} width={'100%'} style={{borderRadius: '50%'}}/>
                                     </div>
                                     <div style={{display: 'inline-block'}} className={styles.info}>
-                                        <p style={{fontWeight: 'bold'}}>{article.author}</p>
+                                        <p style={{fontWeight: 500}}>{article.author}</p>
                                         <p>Oct 14, 2021</p>
                                     </div>
                                 </div>

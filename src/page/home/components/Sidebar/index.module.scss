@@ -15,20 +15,24 @@
       display: flex;
       width: 100%;
       box-sizing: border-box;
-      padding: 20px;
+      padding: 10px;
       text-decoration: none;
       justify-content: center;
-      box-shadow: 1px 4px 8px 0 rgba(0,0,0,0.2),0 2px 4px 0 rgba(0,0,0,0.06);
+      box-shadow: $middle-shadow;
       border-radius: 8px;
-      background-color: rgba(41,98,255,1);
+      background-color: $middle-dark-gray;
       color: #ffff;
+      font-size: $normal-font;
     }
     & > a:hover {
       box-shadow: 0 0 0;
-      background-color: rgba(41,98,255,0.9);
+      //background-color: rgba(41,98,255,0.9);
     }
   }
   .category {
     width: 100%;
+  }
+  .tools {
+    font-size: $normal-font;
   }
 }

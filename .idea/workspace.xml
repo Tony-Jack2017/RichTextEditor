@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="05f4ceef-7a7c-498f-a223-a49a5ced0989" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-overrides.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/gallery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/style/global_style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/style/global_variable.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/login/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/sign/index.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/article.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav/MainNav/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/MainNav/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav/MainNav/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/MainNav/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/TextEditor/components/CodeElement/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/TextEditor/components/CodeElement/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/TextEditor/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/TextEditor/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/article/components/write_space/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/article/components/write_space/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/gallery/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/gallery/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/home/components/ArticleList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/ArticleList/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/home/components/ArticleList/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/ArticleList/index.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/home/components/Popular/components/PopularShow/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/Popular/components/PopularShow/index.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/home/components/Popular/components/Rank/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/Popular/components/Rank/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/home/components/Popular/components/Rank/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/Popular/components/Rank/index.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/home/components/Sidebar/components/Category/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/Sidebar/components/Category/index.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/home/components/Sidebar/components/Follow/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/Sidebar/components/Follow/index.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/home/components/Sidebar/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/Sidebar/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/home/components/Sidebar/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/Sidebar/index.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/login/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/login/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/login/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/login/index.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/login/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/sign/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/sign/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/sign/index.scss" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="20Rvsxxd3bVUkR3FC9zqc3R6Xlx" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\personal\project\study\react\project\personal\website" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="05f4ceef-7a7c-498f-a223-a49a5ced0989" name="Default Changelist" comment="" />
+      <created>1636020424823</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636020424823</updated>
+      <workItem from="1636020426908" duration="22584000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

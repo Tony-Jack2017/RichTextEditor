@@ -1,28 +1,42 @@
 .rank-header {
   h3 {
+    padding: 10px;
     text-align: left;
+    font-size: $normal-font;
   }
 }
 .rank-list {
   .number {
     display: flex;
     border-bottom: 1px solid #dddddd;
+    padding: 10px;
     .number-ranking {
-      margin: 0px 20px 0px 0px
+      margin: 0px 20px 0px 0px;
+      font-size: $littler-font;
     }
     .number-content {
       flex: 1;
       text-align: left;
       h2 {
-        margin: 0px;
+        margin: 0px 0px 10px 0px;
+        font-size: $littler-font;
       }
       p {
-        margin: 0px
+        margin: 0px;
+        font-size: $little-font;
       }
       .content-footer {
         display: flex;
         justify-content: space-between;
         margin-top: 10px;
+        &>div:first-child {
+          &>div:first-child {
+            font-weight: 500;
+          }
+        }
+        &>div:last-child {
+          font-weight: 500;
+        }
       }
 
     }

@@ -3,25 +3,42 @@ import {useRef, useState} from "react";
 
 import TextEditor from '../../../../components/common/TextEditor'
 
-const WriteArticle = () => {
+import { createArticle } from "../../../../api/article"
+
+const WriteArticle = (props) => {
 
     const inputImage = useRef(null)
-
+    const editor = useRef(null)
+    const title = useRef(null)
+    const intro = useRef(null)
     const [cover, setCover] = useState('')
+
 
     const getImage = () => {
         inputImage.current.dispatchEvent(new MouseEvent('click'))
     }
-
     const selectFile = (event) => {
         setCover(URL.createObjectURL(new Blob(event.target.files)))
+    }
+    const publishArticle = () => {
+        const data = {
+            title: title.current.value,
+            content: editor.current.content(),
+            author_id: 1,
+            author: "TomJerry",
+            intro: intro.current.value,
+            poster: "https://cdn.hashnode.com/res/hashnode/image/upload/v1635148061235/kg5sVXRXT.png?w=1000&fit=crop&crop=entropy&auto=compress"
+        }
+        createArticle(data).then(resp => {
+            props.history.replace('/home')
+        })
     }
 
     return (
         <div>
             <div className={styles['write_space']}>
                 <div className={styles.title}>
-                    <input type="text" placeholder="Title..."/>
+                    <input ref={title} type="text" placeholder="Title..."/>
                 </div>
                 <div>
                     <div className={styles.cover}>
@@ -42,13 +59,13 @@ const WriteArticle = () => {
                     </div>
                 </div>
                 <div className={styles.intro}>
-                    <textarea placeholder="Add you intro" />
+                    <textarea ref={intro} placeholder="Add you intro" />
                 </div>
                 <div style={{height: '200px', width: "30%"}}>
-                    <TextEditor />
+                    <TextEditor ref={editor} />
                 </div>
                 <div>
-                    <button>Confirm Text</button>
+                    <button onClick={publishArticle}>Confirm Text</button>
                 </div>
             </div>
         </div>

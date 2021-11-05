@@ -9,7 +9,7 @@ const Rank = () => {
             </div>
             <div className={styles['rank-list']}>
                 <div className={styles.number}>
-                    <h1 className={styles['number-ranking']}>#1</h1>
+                    <h3 className={styles['number-ranking']}>#1</h3>
                     <div className={styles['number-content']}>
                         <h2>The Video made with React</h2>
                         <p>Tom Jerry</p>

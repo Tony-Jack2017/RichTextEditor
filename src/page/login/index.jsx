@@ -1,72 +1,69 @@
-import {useRef} from 'react'
-import './index.scss'
-import CoverImg from '../../asset/page/login/cover.jpg'
+import styles from './index.module.scss'
+import {NavLink} from "react-router-dom";
+import {useRef} from "react";
 
+import {userLogin} from '../../api/user'
 import { connect } from "react-redux";
 import createTokenAction from "../../redux/actions/token_action";
-import { ADDTOKEN } from "../../redux/constant";
-import { userLogin } from "../../api/user";
 
 const Login = (props) => {
-
     const login = useRef(null)
-
-    const handleSubmit = (event) => {
-
-        if (event.preventDefault) {
-            event.preventDefault();
-        } else {
-            window.event.returnValue = false;
-        }
-        userLogin({
-            account: login.current.username.value,
+    const handleLogin = (e) => {
+        e.preventDefault()
+        const data = {
+            account: login.current.account.value,
             password: login.current.password.value
-        }).then(resp => {
-            props.add_token(resp.data.token)
-            props.history.push('/home')
+        }
+        userLogin(data).then(resp => {
+            if (resp.code === 'UE001') {
+                alert(resp.error)
+            } else {
+                props.addToken(resp.data.token)
+                props.history.replace("/home")
+            }
         })
     }
 
     return (
-        <div id='login'>
-            <div className='show'>
-                <img src={CoverImg} alt="登录界面封面"/>
-            </div>
-            <div id='login-form'>
-                <div className='content'>
-                    <div className='title'>
-                        <h2>Welcome Use Blog</h2>
-                        <span>使用账号登录该网站</span>
-                    </div>
-                    <div className='form'>
-                        <form ref={login} onSubmit={handleSubmit}>
-                            <div className='field'>
-                                {/* <label></label> */}
-                                <input name="username" type='text' placeholder='用户名/邮箱'/>
-                            </div>
-                            <div className='field'>
-                                {/* <label></label> */}
-                                <input name="password" type='password' placeholder="登录密码"/>
-                            </div>
-                            <div className='submit field'>
-                                <input type='submit' value='Login Up'/>
-                            </div>
-                        </form>
-                    </div>
+        <div className={styles.login}>
+            <form ref={login} id={styles.form}>
+                <div className={styles['form-header']}>
+                    <h2>Welcome to website</h2>
                 </div>
-            </div>
+                <div className={styles['form-item']}>
+                    <label>Account</label>
+                    <input className='input' name='account' placeholder="email / phone / username"/>
+                </div>
+                <div className={styles['form-item']}>
+                    <label>Password</label>
+                    <input type="password" name='password' className='input'/>
+                    <p className={styles['forget']}>
+                        Forget password ?
+                        <NavLink to="/login" className={styles.link}>
+                            >>>>>>
+                        </NavLink>
+                    </p>
+                </div>
+                <div className={styles['form-item']}>
+                    <button className="button" style={{width: '100%'}} onClick={handleLogin}>Login in</button>
+                </div>
+                <div className={styles['form-item']}>
+                    <h3 className={styles['sign']}>
+                        If you haven't the account, you can
+                        <NavLink to='/sign' className={styles['link']} style={{marginLeft: '8px'}}>
+                            sign up
+                        </NavLink>
+                    </h3>
+                </div>
+            </form>
         </div>
     )
 }
 
-const mapStateToProps = state => {}
 const mapDispatchToProps = (dispatch) => {
     return {
-        add_token: token => dispatch(createTokenAction(ADDTOKEN,token))
+        addToken: token => dispatch(createTokenAction('ADDTOKEN', token))
     }
 }
 
-export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-)(Login)
+export default connect(state => state, mapDispatchToProps)(Login)

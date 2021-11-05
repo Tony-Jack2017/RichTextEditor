@@ -23,10 +23,10 @@ const MainNav = (props) => {
             <div className='header-right'>
                 <div className='entry'>
                     <NavLink to="/login">
-                        <button className='sign-in'>Sign in</button>
+                        <button className='sign-in'>登录</button>
                     </NavLink>
                     <NavLink to="/sign">
-                        <button className='sign-up'>Sign up</button>
+                        <button className='sign-up'>注册</button>
                     </NavLink>
                 </div>
             </div>

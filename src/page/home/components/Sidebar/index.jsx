@@ -2,15 +2,16 @@ import styles from './index.module.scss'
 
 import Follow from "./components/Follow";
 import Category from "./components/Category";
+import {NavLink} from "react-router-dom";
 
 const Sidebar = () => {
     return (
         <div className={styles.sidebar}>
             <div className={styles.write}>
-                <a href="">
+                <NavLink to="/create/article">
                     <span style={{marginRight: '10px'}}>ICON</span>
                     <span>WRITE</span>
-                </a>
+                </NavLink>
             </div>
             <hr/>
             <div className={styles.category}>
