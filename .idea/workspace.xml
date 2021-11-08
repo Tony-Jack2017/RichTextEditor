@@ -2,39 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05f4ceef-7a7c-498f-a223-a49a5ced0989" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-overrides.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/gallery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/style/global_style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/asset/style/global_variable.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/login/index.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/sign/index.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/article.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav/MainNav/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/MainNav/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav/MainNav/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/MainNav/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/TextEditor/components/CodeElement/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/TextEditor/components/CodeElement/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/TextEditor/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/TextEditor/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/article/components/write_space/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/article/components/write_space/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/gallery/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/gallery/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/home/components/ArticleList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/ArticleList/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/home/components/ArticleList/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/ArticleList/index.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/home/components/Popular/components/PopularShow/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/Popular/components/PopularShow/index.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/home/components/Popular/components/Rank/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/Popular/components/Rank/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/home/components/Popular/components/Rank/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/Popular/components/Rank/index.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/home/components/Sidebar/components/Category/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/Sidebar/components/Category/index.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/home/components/Sidebar/components/Follow/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/Sidebar/components/Follow/index.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/home/components/Sidebar/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/Sidebar/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/home/components/Sidebar/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/Sidebar/index.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/login/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/login/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/login/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/login/index.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/login/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/profile/Setting/components/AccountSetting/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/profile/Setting/components/AccountSetting/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/profile/Setting/components/AccountSetting/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/profile/Setting/components/AccountSetting/index.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/sign/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/sign/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/sign/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/sign/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/sign/index.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +50,7 @@
       <option name="presentableId" value="Default" />
       <updated>1636020424823</updated>
       <workItem from="1636020426908" duration="22584000" />
+      <workItem from="1636335407309" duration="10133000" />
     </task>
     <servers />
   </component>
@@ -93,5 +67,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

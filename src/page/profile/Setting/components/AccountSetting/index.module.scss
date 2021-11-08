@@ -1,0 +1,62 @@
+#account-form {
+  padding: 50px;
+  .form-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    .form-item-label {
+      label {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      margin-bottom: 10px;
+    }
+
+    .form-item-input {
+      min-height: 40px;
+      width: 30%;
+      margin-left: 20px;
+      input {
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid rgba(229, 231, 235, 1);
+        font-size: 20px;
+
+        &:focus {
+          outline: 0;
+          border-radius: 10px;
+          border: 1px solid rgba(41, 98, 255, 1);
+        }
+
+        &::-moz-placeholder {
+          color: #999;
+          opacity: 1;
+        }
+
+        &::-ms-input-placeholder {
+          color: #999;
+          opacity: 1;
+        }
+
+        &::-webkit-input-placeholder {
+          color: #999;
+          opacity: 0.8;
+        }
+      }
+    }
+
+    button {
+      display: flex;
+      box-sizing: border-box;
+      padding: 10px;
+      text-decoration: none;
+      justify-content: center;
+      box-shadow: $middle-shadow;
+      border-radius: 8px;
+      background-color: $middle-dark-gray;
+      color: #ffff;
+      font-size: $normal-font;
+    }
+  }
+}
