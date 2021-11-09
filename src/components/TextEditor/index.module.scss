@@ -1,0 +1,16 @@
+.editor {
+  width: 40%;
+  height: 300px;
+  margin: 300px auto;
+  border-radius: 8px;
+  border: 1px solid rgba(229, 231, 235, 1);
+  .editor-tool-tab {
+    height: 50px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: rgb(238, 238, 238);
+  }
+  .editor-body {
+    padding: 10px;
+  }
+}
