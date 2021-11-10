@@ -6,7 +6,7 @@ import React from 'react'
 
 const Dashboard = () => {
     return (
-        <section>
+        <section style={{background: '#ffffff',marginTop: '10px',borderRadius: '8px', border: '1px solid rgba(229, 231, 235, 1)'}}>
             <TotalDataSpilt/>
             <Chart/>
             <Popular/>

@@ -1,6 +1,6 @@
 import styles from './index.module.scss'
 
-import avatar from '../../../../../asset/mock/author_avatar.jpg'
+import logo from '../../../../../asset/img/logo.png'
 
 const UserSetting = () => {
     return (
@@ -21,7 +21,7 @@ const UserSetting = () => {
                         </div>
                         <div className={styles['form-item-input']}>
                             <div className={styles.avatar}>
-                                {/*<img src={avatar} alt=""/>*/}
+                                <img src={logo} alt=""/>
                             </div>
                             <input type="file" style={{display: 'none'}}/>
                         </div>

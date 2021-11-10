@@ -42,6 +42,26 @@ const Sign = (props) => {
                 <form ref={sign} id={styles.form}>
                     <div className={styles.left}>
                         <div className={styles['form-item']}>
+                            <label>Account</label>
+                            <input className='input' name='account'/>
+                        </div>
+                        <div className={styles['form-item']}>
+                            <label>Password</label>
+                            <input className='input' name='password'/>
+                        </div>
+                        <div className={styles['form-item']}>
+                            <label>Email</label>
+                            <input className='input' name='email'/>
+                        </div>
+                        <div className={styles['form-item']}>
+                            <label>Security Code</label>
+                            <input className='input' name='security_code'/>
+                        </div>
+                    </div>
+                    <div className={styles.middle}>
+                    </div>
+                    <div className={styles.right}>
+                        <div className={styles['form-item']}>
                             <label>UserName</label>
                             <input className='input' name='username' placeholder="username"/>
                         </div>
@@ -57,26 +77,6 @@ const Sign = (props) => {
                             <label>Introduce</label>
                             <textarea className='input' style={{height: "150px"}} name='introduce'
                                       placeholder="About of you"/>
-                        </div>
-                    </div>
-                    <div className={styles.middle}>
-                    </div>
-                    <div className={styles.right}>
-                        <div className={styles['form-item']}>
-                            <label>Cover</label>
-                            <input className='input' name='cover' placeholder="you cover"/>
-                        </div>
-                        <div className={styles['form-item']}>
-                            <label>Location</label>
-                            <input className='input' name='location' placeholder="please input you location"/>
-                        </div>
-                        <div className={styles['form-item']}>
-                            <label>Email</label>
-                            <input className='input' name='email' placeholder="please input you email"/>
-                        </div>
-                        <div className={styles['form-item']}>
-                            <label>Github</label>
-                            <input className='input' name='github' placeholder="please input you github"/>
                         </div>
                     </div>
                 </form>

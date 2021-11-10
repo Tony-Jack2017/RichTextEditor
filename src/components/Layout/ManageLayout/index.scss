@@ -13,6 +13,10 @@
     .avator {
       height: 120px;
       margin-bottom: 96px;
+      border-radius: 50%;
+      img {
+        height: 100%;
+      }
     }
   }
   .profile-body-right {

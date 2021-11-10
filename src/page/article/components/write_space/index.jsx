@@ -1,6 +1,8 @@
 import styles from './index.module.scss'
 import {useRef, useState} from "react";
 
+import posterUpload from '../../../../asset/img/poster-upload.png'
+
 import TextEditor from '../../../../components/common/TextEditor'
 
 import { createArticle } from "../../../../api/article"
@@ -46,7 +48,7 @@ const WriteArticle = (props) => {
                             cover === ''
                                 ?
                                 <div className={styles['select_cover']}>
-                                    <img width='100' height='100' onClick={getImage}/>
+                                    <img src={posterUpload} width='100' onClick={getImage}/>
                                     <input type="file" ref={inputImage} onChange={selectFile}
                                            style={{display: 'none'}}/>
                                 </div>
@@ -61,7 +63,7 @@ const WriteArticle = (props) => {
                 <div className={styles.intro}>
                     <textarea ref={intro} placeholder="Add you intro" />
                 </div>
-                <div style={{height: '200px', width: "30%"}}>
+                <div style={{height: '300px', width: "30%"}}>
                     <TextEditor ref={editor} />
                 </div>
                 <div>

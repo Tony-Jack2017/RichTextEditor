@@ -1,0 +1,46 @@
+.attention {
+  min-height: 700px;
+  margin-top: 10px;
+  display: flex;
+  .left {
+    width: 25%;
+
+    & > div {
+      background: #ffffff;
+      margin-top: 20px;
+      border-radius: 8px;
+      border: 1px solid rgba(229, 231, 235, 1);
+    }
+    .search {
+      height: 100px;
+    }
+
+    .data {
+
+    }
+
+    .recent {
+
+    }
+
+  }
+  .right {
+    margin-left: 20px;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    .card {
+      margin-top: 20px;
+      border-radius: 8px;
+      border: 1px solid rgba(229, 231, 235, 1);
+      .avatar {
+        img {
+          width: 100px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+}

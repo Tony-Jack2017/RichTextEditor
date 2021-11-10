@@ -1,12 +1,13 @@
 import React from 'react'
 import './index.scss'
 
-import Dashboard from '../../../page/profile/Dashboard'
-import Personal from "../../../page/profile/Personal";
+
 
 import UserAdminNav from '../../Nav/UserAdminNav'
-import {Route} from "react-router-dom";
-import Setting from '../../../page/profile/Setting';
+import {NavLink, Route} from "react-router-dom";
+import AccountSetting from "../../../page/profile/Setting/components/AccountSetting";
+import UserSetting from "../../../page/profile/Setting/components/UserSetting";
+import logo from '../../../asset/img/logo.png'
 
 const ManageLayout = (Header) => {
     function ManageLayoutWrap() {
@@ -14,27 +15,24 @@ const ManageLayout = (Header) => {
             <div className={'manage-layout'}>
                 <div className={'profile-body-left profile-aside siderbar'}>
                     <div className='avator'>
-                        logo
+                        <NavLink to='/profile/personal'>
+                            <img src={logo}/>
+                        </NavLink>
                     </div>
                     <div className='siderbar-menu'>
                         <UserAdminNav/>
                     </div>
                 </div>
                 <div className={'profile-body-right'}>
-                    <header className={'profile-header'}>
-                        <Header/>
-                    </header>
                     <div style={{borderBottom: '1px solid #DDDDDD'}}></div>
                     <article className='profile-content'>
-                        <Route path='/profile/dashboard' component={Dashboard} />
-                        <Route path='/profile/personal' component={Personal} />
-                        <Route path="/profile/setting" component={Setting} />
+                        <Route path='/profile/setting/account_setting' component={AccountSetting} />
+                        <Route path='/profile/setting/user_setting' component={UserSetting} />
                     </article>
                 </div>
             </div>
         )
     }
-
     return ManageLayoutWrap
 }
 

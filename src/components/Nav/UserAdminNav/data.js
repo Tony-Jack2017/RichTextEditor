@@ -1,16 +1,12 @@
 const navList = [
   {
-    path: '/dashboard',
-    title: 'Dashboard'
+    path: '/profile/setting/user_setting',
+    title: 'UserSetting'
   },
   {
-    path: '/blog',
-    title: 'Blog'
-  },
-  {
-    path: '/setting',
-    title: 'Setting'
-  },
+    path: '/profile/setting/account_setting',
+    title: 'AccountSetting'
+  }
 ]
 
 export default navList

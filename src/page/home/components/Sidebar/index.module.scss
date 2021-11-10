@@ -13,16 +13,22 @@
   .write {
     & > a {
       display: flex;
+      height: 50px;
       width: 100%;
       box-sizing: border-box;
       padding: 10px;
       text-decoration: none;
       justify-content: center;
+      align-items: center;
       box-shadow: $middle-shadow;
       border-radius: 8px;
       background-color: $middle-dark-gray;
       color: #ffff;
       font-size: $normal-font;
+      img {
+        height: 80%;
+        vertical-align: bottom;
+      }
     }
     & > a:hover {
       box-shadow: 0 0 0;

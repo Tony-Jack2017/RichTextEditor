@@ -4,6 +4,9 @@ import avatarHome from '../../../../asset/mock/avatar-home.jpeg'
 import {getArticleAll} from "../../../../api/article";
 import {useEffect, useState} from "react";
 
+import like from '../../../../asset/img/like.png'
+import comment from  '../../../../asset/img/comment.png'
+
 const ArticleList = () => {
     const [articleList, setArticleList] = useState([])
     useEffect(() => {
@@ -15,18 +18,6 @@ const ArticleList = () => {
     },[])
     return (
         <div className={styles['article-list']}>
-            <div className={styles['my-feed']}>
-                <div className={styles.title}>
-                    <h2>#My Feed</h2>
-                </div>
-                <div className={styles['select-menu']}>
-                    <ul>
-                        <li>Feature</li>
-                        <li>Recent</li>
-                        <li>Choose</li>
-                    </ul>
-                </div>
-            </div>
             <div className={styles.list}>
                 {
                     articleList.map(article => {
@@ -56,8 +47,8 @@ const ArticleList = () => {
                                 </div>
                                 <div className={styles.footer}>
                                     <div>
-                                        <div>{article.follow_num}</div>
-                                        <div>Comment</div>
+                                        <div style={{height: '100%'}}><img src={like} height='60%'/> {article.follow_num}</div>
+                                        <div style={{height: '100%'}}><img src={comment} height='60%'/> Comment</div>
                                     </div>
                                     <div>Mark</div>
                                 </div>

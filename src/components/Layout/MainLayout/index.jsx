@@ -7,11 +7,13 @@ import Gallery from '../../../page/gallery'
 import About from '../../../page/about'
 import Article from "../../../page/article";
 import WriteArticle from "../../../page/article/components/write_space";
+import Profile from "../../../page/profile";
 
 const MainLayout = () => {
     return (
         <div className='main-layout'>
             <div className='main-header'>
+                <div className='cover'></div>
                 <MainNav/>
             </div>
             <div className='main-body'>

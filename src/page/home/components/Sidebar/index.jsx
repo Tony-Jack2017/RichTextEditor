@@ -4,13 +4,15 @@ import Follow from "./components/Follow";
 import Category from "./components/Category";
 import {NavLink} from "react-router-dom";
 
+import writeLogo from '../../../../asset/img/write-logo.png'
+
 const Sidebar = () => {
     return (
         <div className={styles.sidebar}>
             <div className={styles.write}>
                 <NavLink to="/create/article">
-                    <span style={{marginRight: '10px'}}>ICON</span>
-                    <span>WRITE</span>
+                    <img src={writeLogo} style={{marginRight: '10px'}} />
+                    <span>创作工坊</span>
                 </NavLink>
             </div>
             <hr/>

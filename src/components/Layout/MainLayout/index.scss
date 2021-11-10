@@ -1,5 +1,21 @@
 .main-layout {
   margin: 0 8px;
+  position: relative;
+  z-index: 1;
+  .main-header {
+    max-width: 1620px;
+    min-width: 1440px;
+    margin: 0 auto;
+    .cover {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: -1;
+      width: 100vw;
+      background: #ffffff;
+      height: 60px;
+    }
+  }
   .main-body {
     margin-top: 10px;
   }

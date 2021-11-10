@@ -1,22 +1,23 @@
 import {NavLink} from 'react-router-dom'
 import './index.scss'
+import logo from '../../../asset/img/logo.png'
 
 const MainNav = (props) => {
     return (
         <div className='header'>
             <div className='header-left logo'>
-                This is logo
+                <img src={logo}/>
             </div>
             <div className='header-nav'>
                 <ul>
                     <li>
-                        <NavLink to="/">Home</NavLink>
+                        <NavLink to="/">首页</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/gallery">Gallery</NavLink>
+                        <NavLink to="/gallery">画廊</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/about">About</NavLink>
+                        <NavLink to="/about">关于</NavLink>
                     </li>
                 </ul>
             </div>

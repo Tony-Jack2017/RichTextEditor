@@ -1,26 +1,31 @@
 .header {
-  display: flex;
   height: 60px;
   background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 20px;
+
+
   .logo {
-    width: 300px;
+    grid-column: 1 / 2;
     text-align: center;
     line-height: 60px;
+    img {
+      height: 60px;
+    }
   }
 
   .header-nav {
-    flex: 1;
+    grid-column: 2 / 6;
     display: flex;
-
     ul {
       display: flex;
       list-style-type: none;
       padding: 0;
       justify-content: space-between;
-      font-size: $littler-font;
+      font-size: $little-font;
       li {
         padding: 0 20px;
-
         a {
           text-decoration: none;
           font-weight: 500;
@@ -33,21 +38,18 @@
   }
 
   .header-right {
-    width: 300px;
-    text-align: center;
+    grid-column: 6 / 8;
+    text-align: right;
     line-height: 60px;
-
     .entry {
       button {
         padding: 10px 20px;
-        margin-left: 10px;
+        margin-left: 20px;
         border: 0px;
         box-shadow: $littler-shadow;
         font-size: $small-font;
       }
-
       .sign-up {
-
       }
     }
   }

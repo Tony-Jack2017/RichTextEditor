@@ -2,12 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05f4ceef-7a7c-498f-a223-a49a5ced0989" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/asset/img/comment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/like.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/liked.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/poster-upload.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/asset/img/write-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Layout/ManageLayoutTwo/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/profile/Article/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/profile/Article/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/profile/Attention/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/profile/Attention/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/profile/FollowArticle/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/profile/FollowArticle/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/profile/Header/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/profile/Picture/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/profile/Picture/index.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/profile/Setting/components/AccountSetting/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/profile/Setting/components/AccountSetting/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/MainLayout/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/MainLayout/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/MainLayout/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/MainLayout/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/ManageLayout/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/ManageLayout/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/ManageLayout/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/ManageLayout/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav/MainNav/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/MainNav/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav/MainNav/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/MainNav/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav/UserAdminNav/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/UserAdminNav/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Nav/UserAdminNav/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/UserAdminNav/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/article/components/write_space/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/article/components/write_space/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/home/components/ArticleList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/ArticleList/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/home/components/ArticleList/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/ArticleList/index.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/home/components/Sidebar/components/Category/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/Sidebar/components/Category/index.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/home/components/Sidebar/components/Follow/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/Sidebar/components/Follow/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/home/components/Sidebar/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/Sidebar/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/home/components/Sidebar/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/components/Sidebar/index.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/home/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/index.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/profile/Dashboard/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/profile/Dashboard/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/profile/Header/header1/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/profile/Header/header2/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/profile/Header/header2/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/profile/Header/index.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/profile/Personal/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/profile/Personal/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/ManageLayoutTwo/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/profile/Setting/components/AccountSetting/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/profile/Setting/components/AccountSetting/index.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/profile/Setting/components/UserSetting/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/profile/Setting/components/UserSetting/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/profile/Setting/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/profile/Setting/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/profile/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/profile/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/sign/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/sign/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/sign/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/sign/index.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +68,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/asset/img" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -37,7 +76,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\personal\project\study\react\project\personal\website\src\asset\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\personal\project\study\react\project\personal\website\src\page\profile\Header" />
+      <recent name="E:\personal\project\study\react\project\personal\website\src\asset\img" />
       <recent name="E:\personal\project\study\react\project\personal\website" />
     </key>
   </component>
@@ -50,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1636020424823</updated>
       <workItem from="1636020426908" duration="22584000" />
-      <workItem from="1636335407309" duration="10133000" />
+      <workItem from="1636335407309" duration="35164000" />
     </task>
     <servers />
   </component>
