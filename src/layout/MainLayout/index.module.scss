@@ -1,0 +1,18 @@
+.main {
+  width: 1440px;
+  height: 80%;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(229, 231, 235, 1);
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  .content {
+    grid-column: 1/7;
+    background-color: #ffffff;
+  }
+  .tools {
+    grid-column: 7/9;
+    background-color: #cacaca;
+  }
+}

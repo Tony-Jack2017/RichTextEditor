@@ -1,14 +1,12 @@
 
 import './App.css'
 
-import TextEditor from './components/TextEditor'
-import StoreEditorContent from './components/StoreEditorContent'
+import MainLayout from './layout/MainLayout';
 
 function App(props) {
   return (
     <div className="App">
-      {/* <TextEditor /> */}
-      <StoreEditorContent />
+      <MainLayout />
     </div>
   )
 }
