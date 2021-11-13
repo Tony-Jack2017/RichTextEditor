@@ -1,79 +1,69 @@
-import escapeHtml from 'escape-html'
-import React, {useImperativeHandle} from "react";
-import {Slate, Editable, withReact} from 'slate-react'
-import {createEditor, Transforms, Editor, Node, Text} from 'slate'
-import {useMemo, useState, useCallback} from 'react'
+import E from 'wangeditor'
 
-import CodeElement from "./components/CodeElement";
+import { useEffect } from "react";
 
-const DefaultElement = props => {
-    return <p {...props.attributes}>{props.children}</p>
-}
+let editor = null
+const TextEditor = (props) => {
 
-const serialize = node => {
-    if (Text.isText(node)) {
-        return escapeHtml(node.text)
-    }
-    const children = node[0].children.map(n => serialize(n)).join('')
-    switch (node[0].type) {
-        case 'quote':
-            return `<blockquote><p>${children}</p></blockquote>`
-        case 'paragraph':
-            return `<p>${children}</p>`
-        case 'link':
-            return `<a href="${escapeHtml(node.url)}">${children}</a>`
-        default:
-            return children
-    }
-}
+    const { value, onChange } = props;
 
+    useEffect(() => {
+        // 注：class写法需要在componentDidMount 创建编辑器
+        editor = new E("#div1")
 
-const TextEditor = React.forwardRef((props, ref) => {
-    const editor = useMemo(() => withReact(createEditor()), [])
-    const [value, setValue] = useState([
-        {
-            type: 'paragraph',
-            children: [{ text: 'A line of text in a paragraph.' }],
-        },
-    ])
-    const renderElement = useCallback(props => {
-        switch (props.element.type) {
-            case 'code':
-                return <CodeElement {...props} />
-            default:
-                return <DefaultElement {...props} />
+        editor.config.onchange = (newHtml) => {
+            onChange(newHtml);
         }
-    }, [])
-    useImperativeHandle(ref, () => ({
-        content: getValue
-    }))
 
-    const getValue = () => {
-        const content = serialize(value)
-        return content
-    }
+        // 需要展示的菜单
+        editor.config.menus = [
+            'head',
+            'bold',
+            'fontSize',
+            'fontName',
+            'italic',
+            'underline',
+            'strikeThrough',
+            'indent',
+            'lineHeight',
+            'foreColor',
+            'backColor',
+            'link',
+            'list',
+            'todo',
+            'justify',
+            'quote',
+            'table',
+            'splitLine',
+            'undo',
+            'redo',
+        ]
+
+        /**一定要创建 */
+        editor.create()
+
+
+        return () => {
+            // 组件销毁时销毁编辑器 注：class写法需要在componentWillUnmount中调用
+            editor.destroy()
+        }
+
+        // 这里一定要加上下面的这个注释
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
+
+    useEffect(() => {
+        if (editor) {
+            editor.txt.html(value);
+        }
+    }, [value])
 
     return (
-        <Slate editor={editor} value={value} onChange={value => setValue(value)}>
-            <Editable
-                renderElement={renderElement}
-                onKeyDown={event => {
-                    if (event.key === '`' && event.ctrlKey) {
-                        event.preventDefault()
-                        const { selection } = editor
-                        const [match] = Editor.nodes(editor, {
-                            match: n => n.type === 'code',
-                        })
-                        Transforms.setNodes(
-                            editor,
-                            { type: match ? 'paragraph' : 'code' },
-                            { match: n => Editor.isBlock(editor, n) }
-                        )
-                    }
-                }}
-            />
-        </Slate>
-    )
-})
+        <div>
+            <div id="div1"></div>
+        </div>
+    );
+
+}
 
 export default TextEditor

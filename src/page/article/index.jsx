@@ -1,19 +1,21 @@
 import styles from './index.module.scss'
 
-import Poster from "./components/poster";
+import Poster from "./components/poster"
+import Content from "./components/content"
+import Comment from "./components/comment"
 
 const Article = () => {
     return (
         <div className={styles.article}>
             <div>
                 <div className={styles['article-header']}>
-                    <Poster />
+                    <Poster/>
                 </div>
                 <article className={styles['article-body']}>
-                    {/*This is article*/}
+                    <Content/>
                 </article>
                 <aside className={styles['article-comment']}>
-                    {/*This is commite*/}
+                    <Comment/>
                 </aside>
             </div>
             <aside className={styles['article-sidebar']}>

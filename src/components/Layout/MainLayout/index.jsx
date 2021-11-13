@@ -6,8 +6,7 @@ import Home from '../../../page/home'
 import Gallery from '../../../page/gallery'
 import About from '../../../page/about'
 import Article from "../../../page/article";
-import WriteArticle from "../../../page/article/components/write_space";
-import Profile from "../../../page/profile";
+import WriteArticle from "../../../page/write_space";
 
 const MainLayout = () => {
     return (

@@ -1,11 +1,11 @@
 import styles from './index.module.scss'
 import {useRef, useState} from "react";
 
-import posterUpload from '../../../../asset/img/poster-upload.png'
+import posterUpload from '../../asset/img/poster-upload.png'
 
-import TextEditor from '../../../../components/common/TextEditor'
+import TextEditor from '../../components/common/TextEditor'
 
-import { createArticle } from "../../../../api/article"
+import { createArticle } from "../../api/article"
 
 const WriteArticle = (props) => {
 
