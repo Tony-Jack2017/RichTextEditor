@@ -6,7 +6,6 @@ const TextEditor = () => {
   return (
     <Fragment>
       <div className={styles["editor-tab"]}>
-        
       </div>
       <div className={styles["editor-body"]}>
         <Editor />
