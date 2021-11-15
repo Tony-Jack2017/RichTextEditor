@@ -5,11 +5,9 @@
     background: rgba(229, 231, 235, 1)
   }
   .list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
     .item {
+      margin: 20px;
+      height: 100px;
       border: 1px solid rgba(229, 231, 235, 1);
       font-size: 14px;
     }

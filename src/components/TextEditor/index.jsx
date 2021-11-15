@@ -1,14 +1,17 @@
 import React, { Fragment } from "react";
-import Editor from "../Editor";
 import styles from "./index.module.scss";
 
-const TextEditor = () => {
+import Editor from "../Editor";
+import MenuTab from "../MenuTab"
+
+const TextEditor = (props) => {
   return (
     <Fragment>
       <div className={styles["editor-tab"]}>
+        <MenuTab editor={props.editor} />
       </div>
       <div className={styles["editor-body"]}>
-        <Editor />
+        <Editor editor={props.editor} />
       </div>
     </Fragment>
   );

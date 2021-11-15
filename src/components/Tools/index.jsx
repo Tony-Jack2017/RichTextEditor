@@ -2,21 +2,18 @@
 import { Fragment } from "react"
 import styles from "./index.module.scss"
 
-const Tools = () => {
+const Tools = (props) => {
   return (
-    
     <Fragment>
       <div className={styles.font}>
-        <p>文本字体设置</p>
+        <p>元素类型</p>
         <div className={styles.list}>
-          <div className={styles.item}>加粗</div>
-          <div className={styles.item}>斜体</div>
-          <div className={styles.item}>删除线</div>
-          <div className={styles.item}>下滑线</div>
+          <div className={styles.item} >容器元素</div>
+          <div className={styles.item}>代码片段</div>
+          <div className={styles.item}>图片</div>
         </div>
       </div>
     </Fragment>
-
   )
 }
 
