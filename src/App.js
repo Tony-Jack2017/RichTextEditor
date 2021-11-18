@@ -11,7 +11,6 @@ function App(props) {
     return (
         <div className="App">
             <Switch>
-                <Route path='/profile' component={Profile}/>
                 <Route path='/login' component={Login}/>
                 <Route path='/sign' component={Sign}/>
                 <Route path='/' component={MainLayout}/>

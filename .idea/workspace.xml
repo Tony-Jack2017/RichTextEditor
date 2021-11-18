@@ -2,27 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05f4ceef-7a7c-498f-a223-a49a5ced0989" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/asset/style/global_layout.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/article/components/comment/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/article/components/comment/index.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/article/components/content/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/article/components/content/index.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Layout/MainLayout/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/MainLayout/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/TextEditor/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/TextEditor/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/article/components/write_space/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/write_space/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/article/components/write_space/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/write_space/index.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/article/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/article/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/article/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/article/index.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/profile/Article/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/profile/Article/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/profile/Article/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/profile/Article/index.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/MainLayout/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/MainLayout/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/ManageLayoutTwo/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/ManageLayoutTwo/index.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/home/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home/index.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/profile/Attention/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/profile/Attention/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/profile/Attention/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/profile/Attention/index.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/profile/FollowArticle/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/profile/FollowArticle/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/profile/FollowArticle/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/profile/FollowArticle/index.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/profile/Dashboard/components/TotalDataSpilt/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/profile/Dashboard/components/TotalDataSpilt/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/profile/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/profile/index.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +64,8 @@
       <updated>1636020424823</updated>
       <workItem from="1636020426908" duration="22584000" />
       <workItem from="1636335407309" duration="35800000" />
-      <workItem from="1636596763456" duration="13149000" />
+      <workItem from="1636596763456" duration="13222000" />
+      <workItem from="1636940155211" duration="11768000" />
     </task>
     <servers />
   </component>

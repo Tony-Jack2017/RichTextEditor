@@ -3,8 +3,7 @@
   position: relative;
   z-index: 1;
   .main-header {
-    max-width: 1620px;
-    min-width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     .cover {
       position: absolute;
@@ -17,6 +16,10 @@
     }
   }
   .main-body {
-    margin-top: 10px;
+    max-width: 1440px;
+    margin: 0 auto;
+    & > div {
+      margin-top: 10px;
+    }
   }
 }

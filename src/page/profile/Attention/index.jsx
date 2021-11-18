@@ -7,6 +7,27 @@ const Attention = () => {
     return (
         <div className={styles.attention}>
             <div className={styles.left}>
+                {
+                    [1].map(n => {
+                        return (
+                            <div className={styles.card} key={n}>
+                                <div className={styles.avatar}>
+                                    <img src={avatar}/>
+                                </div>
+                                <div className={styles['author-info']}>
+                                    <h3>Tom Jerry</h3>
+                                    <p>
+                                        I'm a interface developer for the website.
+                                    </p>
+                                    <div className={styles['follow-author']}>
+                                        <button>Follow</button>
+                                    </div>
+                                </div>
+                            </div>)
+                    })
+                }
+            </div>
+            <div className={styles.right}>
                 <div className={styles.search}>
                     <input className='input' placeholder="请输入关注博主的名称"/>
                 </div>
@@ -39,27 +60,6 @@ const Attention = () => {
                         </p>
                     </div>
                 </div>
-            </div>
-            <div className={styles.right}>
-                {
-                    [1].map(n => {
-                        return (
-                            <div className={styles.card} key={n}>
-                                <div className={styles.avatar}>
-                                    <img src={avatar}/>
-                                </div>
-                                <div className={styles['author-info']}>
-                                    <h3>Tom Jerry</h3>
-                                    <p>
-                                        I'm a interface developer for the website.
-                                    </p>
-                                    <div className={styles['follow-author']}>
-                                        <button>Follow</button>
-                                    </div>
-                                </div>
-                            </div>)
-                    })
-                }
             </div>
         </div>
     )

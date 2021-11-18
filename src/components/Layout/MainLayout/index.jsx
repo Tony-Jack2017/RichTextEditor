@@ -7,6 +7,7 @@ import Gallery from '../../../page/gallery'
 import About from '../../../page/about'
 import Article from "../../../page/article";
 import WriteArticle from "../../../page/write_space";
+import Profile from  "../../../page/profile"
 
 const MainLayout = () => {
     return (
@@ -22,6 +23,7 @@ const MainLayout = () => {
                 <Route path='/about' component={About}/>
                 <Route path='/article' component={Article}/>
                 <Route path='/create/article' component={WriteArticle}/>
+                <Route path='/profile' component={Profile}/>
             </div>
         </div>
     )
