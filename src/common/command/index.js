@@ -11,6 +11,7 @@ const CustomCommand = {
     },
     
     isCodeBlockActive(editor) {
+        console.log('判断')
         const [ match ] = Editor.nodes(editor, {
             match: n => n.type === 'code'
         })
