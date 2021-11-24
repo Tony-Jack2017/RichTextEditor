@@ -1,31 +1,22 @@
 import {Fragment} from "react";
 import styles from "./index.module.scss";
 
-import CustomCommand from "../../../../common/command";
+import Button from "./components/Button";
 
-const MenuTab = (props) => {
+const MenuTab = () => {
+
     return (
         <Fragment>
             <ul className={styles.menu}>
                 <li>
-                    <button
-                        onMouseDown={(event) => {
-                            event.preventDefault();
-                            CustomCommand.toggleBoldMark(props.editor);
-                        }}
-                    >
+                    <Button format={"blod"}>
                         B
-                    </button>
+                    </Button>
                 </li>
                 <li>
-                    <button
-                        onMouseDown={(event) => {
-                            event.preventDefault();
-                            CustomCommand.toggleCodeBlock(props.editor);
-                        }}
-                    >
+                    <Button format={"code"}>
                         code
-                    </button>
+                    </Button>
                 </li>
             </ul>
         </Fragment>
