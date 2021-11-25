@@ -9,7 +9,7 @@ const Button = (props) => {
     const handleMouseDown = (e) => {
         e.preventDefault()
         switch (props.format) {
-            case 'blod':
+            case 'bold':
                 CustomCommand.toggleBoldMark(editor)
                 break
             case 'code':

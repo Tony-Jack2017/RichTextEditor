@@ -1,7 +1,15 @@
-.editor-tab {
-  height: 50px;
-  background: rgb(0, 0, 0);
-}
-.editor-body {
-  padding: 10px;
+.editor {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .editor-tab {
+    height: 50px;
+    background: #ffffff;
+    margin-bottom: 5px;
+  }
+  .editor-body {
+    flex: 1;
+    padding: 10px;
+    background: #ffffff;
+  }
 }
