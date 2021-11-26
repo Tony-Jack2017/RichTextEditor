@@ -7,6 +7,8 @@ const Button = (props) => {
 
   const editor = useSlate()
 
+  console.log(editor)
+
   const handleMouseDown = (e) => {
     e.preventDefault()
     switch(props.format) {
