@@ -8,11 +8,11 @@ library.add(fab, faCheckSquare, faCode, faItalic, faBold, faUnderline)
 
 
 function App(props) {
-    return (
-        <div className="App">
-            <MainLayout/>
-        </div>
-    )
+  return (
+    <div className="App">
+      <MainLayout/>
+    </div>
+  )
 }
 
 export default App;
