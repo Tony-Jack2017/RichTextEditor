@@ -1,45 +1,41 @@
 import {Transforms, Text, Editor} from 'slate'
 
 // Define our own custom set of helpers.
+
+
+
 const CustomCommand = {
 
-  isBoldActive(editor) {
+  isMarkActive(editor, format){
     const marks = Editor.marks(editor)
-    return marks ? marks['bold'] === true : false
+    return marks ? marks[format] === true : false
   },
 
-  isCodeBlockActive(editor) {
+  isBlockMarkActive(editor, type){
     const [match] = Editor.nodes(editor, {
-      match: n => n.type === 'code'
+      match: n => n.type === type
     })
     return !!match
   },
 
-  isItalicMarkActive(editor) {
-    const [match] = Editor.nodes(editor, {
-      match: n => n.italic === true,
-      universal: true
-    })
-    return !!match
-  },
-
-  toggleBoldMark(editor) {
-    const isActive = CustomCommand.isBoldActive(editor)
+  toggleMark(editor, format) {
+    const isActive = CustomCommand.isMarkActive(editor, format)
     Transforms.setNodes(
       editor,
-      {bold: isActive ? null : true},
+      {[format]: isActive ? null : true},
       {
         match: n => Text.isText(n),
         split: true
       }
     )
   },
-  toggleCodeBlock(editor) {
-    const isActive = CustomCommand.isCodeBlockActive(editor)
+
+  toggleBlock(editor, type) {
+    const isActive = CustomCommand.isBlockMarkActive(editor, type)
     Transforms.setNodes(
       editor,
-      {type: isActive ? null : 'code'},
-      {match: n => Editor.isBlock(editor, n)}
+      { type: isActive ? null : type },
+      { match: n => Editor.isBlock(editor, n) }
     )
   },
 }

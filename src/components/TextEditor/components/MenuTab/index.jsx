@@ -10,15 +10,15 @@ const MenuTab = () => {
         <li>
           <Button format={"bold"}></Button>
         </li>
-        {/*<li>*/}
-        {/*  <Button format={"code"}></Button>*/}
-        {/*</li>*/}
-        {/*<li>*/}
-        {/*  <Button format={"italic"}></Button>*/}
-        {/*</li>*/}
-        {/*<li>*/}
-        {/*  <Button format={"underline"}></Button>*/}
-        {/*</li>*/}
+        <li>
+          <Button format={"code"}></Button>
+        </li>
+        <li>
+          <Button format={"italic"}></Button>
+        </li>
+        <li>
+          <Button format={"underline"}></Button>
+        </li>
       </ul>
     </Fragment>
   );

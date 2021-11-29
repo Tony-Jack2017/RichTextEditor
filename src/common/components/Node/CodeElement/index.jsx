@@ -1,3 +1,5 @@
+import "./index.module.scss"
+
 const CodeElement = props => {
   return (
     <pre {...props.attributes}>
