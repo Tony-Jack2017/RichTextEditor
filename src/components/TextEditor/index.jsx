@@ -8,7 +8,7 @@ import Editor from "./components/Editor";
 
 const TextEditor = (props) => {
 
-  const editor = useMemo(() => withReact(createEditor()), [])
+  const editor = useMemo(() => withInlines(withReact(createEditor())), [])
   const [value, setValue] = useState([{type: "paragraph", children: [{text: ""}]}])
 
   return (
@@ -27,5 +27,11 @@ const TextEditor = (props) => {
     </div>
   );
 };
+
+const withInlines = editor => {
+  const { isInline } = editor
+  editor.inInline = element => ['code_inline'].includes(element.type) || isInline(element)
+  return editor
+}
 
 export default TextEditor;

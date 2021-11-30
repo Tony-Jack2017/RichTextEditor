@@ -1,9 +1,6 @@
 import {Transforms, Text, Editor} from 'slate'
 
 // Define our own custom set of helpers.
-
-
-
 const CustomCommand = {
 
   isMarkActive(editor, format){
@@ -11,7 +8,14 @@ const CustomCommand = {
     return marks ? marks[format] === true : false
   },
 
-  isBlockMarkActive(editor, type){
+  isBlockMarkActive(editor, type) {
+    const [match] = Editor.nodes(editor, {
+      match: n => n.type === type
+    })
+    return !!match
+  },
+
+  isInlineMarkActive(editor, type) {
     const [match] = Editor.nodes(editor, {
       match: n => n.type === type
     })
@@ -20,6 +24,18 @@ const CustomCommand = {
 
   toggleMark(editor, format) {
     const isActive = CustomCommand.isMarkActive(editor, format)
+    Transforms.setNodes(
+      editor,
+      {[format]: isActive ? null : true},
+      {
+        match: n => Text.isText(n),
+        split: true
+      }
+    )
+  },
+
+  toggleInline(editor, format) {
+    const isActive = CustomCommand.isInlineMarkActive(editor, format)
     Transforms.setNodes(
       editor,
       {[format]: isActive ? null : true},

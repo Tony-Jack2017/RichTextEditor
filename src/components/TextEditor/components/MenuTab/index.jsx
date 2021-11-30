@@ -8,16 +8,19 @@ const MenuTab = () => {
     <Fragment>
       <ul className={styles.menu}>
         <li>
-          <Button format={"bold"}></Button>
+          <Button format={"bold"} />
         </li>
         <li>
-          <Button format={"code"}></Button>
+          <Button format={"code"} />
         </li>
         <li>
-          <Button format={"italic"}></Button>
+          <Button format={"italic"} />
         </li>
         <li>
-          <Button format={"underline"}></Button>
+          <Button format={"underline"} />
+        </li>
+        <li>
+          <Button format={"link"} />
         </li>
       </ul>
     </Fragment>

@@ -20,7 +20,10 @@ const Button = (props) => {
         CustomCommand.toggleMark(editor, 'underline')
         break
       case 'code':
-        CustomCommand.toggleBlock(editor, 'code')
+        CustomCommand.toggleInline(editor, 'code_inline')
+        break
+      case 'link':
+        CustomCommand.toggleBlock(editor, 'link')
         break
     }
   }
@@ -34,7 +37,9 @@ const Button = (props) => {
       case 'underline':
         return CustomCommand.isMarkActive(editor, 'underline')
       case 'code':
-        return CustomCommand.isBlockMarkActive(editor, 'code')
+        return CustomCommand.isInlineMarkActive(editor, 'code_inline')
+      case 'link':
+        return CustomCommand.isBlockMarkActive(editor, 'link')
     }
   }
 
