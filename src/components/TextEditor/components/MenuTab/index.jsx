@@ -1,26 +1,28 @@
 import {Fragment} from "react";
 import styles from "./index.module.scss";
 
-import Button from "./components/Button";
+import MarkButton from "./components/MarkButton";
+import BlockButton from "./components/BlockButton";
+import InlineButton from "./components/InlineButton";
 
 const MenuTab = () => {
   return (
     <Fragment>
       <ul className={styles.menu}>
         <li>
-          <Button format={"bold"} />
+          <MarkButton format={"bold"} />
         </li>
         <li>
-          <Button format={"code"} />
+          <MarkButton format={"italic"} />
         </li>
         <li>
-          <Button format={"italic"} />
+          <MarkButton format={"underline"} />
         </li>
         <li>
-          <Button format={"underline"} />
+          <InlineButton format={"link"} />
         </li>
         <li>
-          <Button format={"link"} />
+          <BlockButton format={"code"} />
         </li>
       </ul>
     </Fragment>
