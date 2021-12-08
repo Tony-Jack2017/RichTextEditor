@@ -5,6 +5,8 @@ import Leaf from "./components/Leaf";
 import CodeInlineElement from "../../../../common/components/Node/CodeInlineElement";
 import DefaultElement from "../../../../common/components/Node/DefaultElement";
 import LinkElement from "../../../../common/components/Node/LinkElement";
+import PrimaryTitleElement from "../../../../common/components/Node/PrimaryTitleElement";
+import SecondaryTitleElement from "../../../../common/components/Node/SecondaryTitleElement";
 
 const Editor = (props) => {
   const renderElement = useCallback((props) => {
@@ -13,6 +15,10 @@ const Editor = (props) => {
         return <CodeInlineElement {...props} />
       case "link":
         return <LinkElement {...props} />
+      case "dice-one":
+        return <PrimaryTitleElement {...props} />
+      case "dice-two":
+        return <SecondaryTitleElement {...props} />
       default:
         return <DefaultElement {...props} />
     }

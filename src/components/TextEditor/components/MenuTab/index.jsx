@@ -10,19 +10,25 @@ const MenuTab = () => {
     <Fragment>
       <ul className={styles.menu}>
         <li>
-          <MarkButton format={"bold"} />
+          <MarkButton format={"bold"}/>
         </li>
         <li>
-          <MarkButton format={"italic"} />
+          <MarkButton format={"italic"}/>
         </li>
         <li>
-          <MarkButton format={"underline"} />
+          <MarkButton format={"underline"}/>
         </li>
         <li>
-          <InlineButton format={"link"} />
+          <InlineButton format={"link"}/>
         </li>
         <li>
-          <BlockButton format={"code"} />
+          <BlockButton format={"code"}/>
+        </li>
+        <li>
+          <BlockButton format={"dice-one"}/>
+        </li>
+        <li>
+          <BlockButton format={"dice-two"}/>
         </li>
       </ul>
     </Fragment>
