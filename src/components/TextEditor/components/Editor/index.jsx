@@ -7,6 +7,9 @@ import DefaultElement from "../../../../common/components/Node/DefaultElement";
 import LinkElement from "../../../../common/components/Node/LinkElement";
 import PrimaryTitleElement from "../../../../common/components/Node/PrimaryTitleElement";
 import SecondaryTitleElement from "../../../../common/components/Node/SecondaryTitleElement";
+import OrderedListElement from "../../../../common/components/Node/OrderedListElement";
+import UnOrderedListElement from "../../../../common/components/Node/UnorderedListElement";
+import ListItemElement from "../../../../common/components/Node/ListItemElement";
 
 const Editor = (props) => {
   const renderElement = useCallback((props) => {
@@ -19,6 +22,12 @@ const Editor = (props) => {
         return <PrimaryTitleElement {...props} />
       case "dice-two":
         return <SecondaryTitleElement {...props} />
+      case "list-ol":
+        return <OrderedListElement {...props} />
+      case "list-ul":
+        return <UnOrderedListElement {...props} />
+      case "list-item":
+        return <ListItemElement {...props} />
       default:
         return <DefaultElement {...props} />
     }

@@ -1,10 +1,10 @@
-import {Transforms, Text, Editor} from 'slate'
+import {Transforms, Text, Editor, Element} from 'slate'
 
 /**
  * 元素样式转换指令
  */
 const MarkCommand = {
-  isMarkActive(editor, format){
+  isMarkActive(editor, format) {
     const marks = Editor.marks(editor)
     return marks ? marks[format] === true : false
   },
@@ -62,9 +62,8 @@ const BlockCommand = {
   toggleBlock(editor, type) {
     const isActive = BlockCommand.isBlockMarkActive(editor, type)
     Transforms.setNodes(
-      editor,
-      { type: isActive ? null : type },
-      { match: n => Editor.isBlock(editor, n) }
+      editor, {type: isActive ? null : type},
+      {match: n => Editor.isBlock(editor, n)}
     )
   },
 

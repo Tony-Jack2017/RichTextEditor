@@ -30,6 +30,12 @@ const MenuTab = () => {
         <li>
           <BlockButton format={"dice-two"}/>
         </li>
+        <li>
+          <BlockButton format={"list-ol"}/>
+        </li>
+        <li>
+          <BlockButton format={"list-ul"}/>
+        </li>
       </ul>
     </Fragment>
   );
