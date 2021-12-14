@@ -1,7 +1,7 @@
 import {useSlate} from "slate-react";
-import { BlockCommand } from "../../../../../../common/command";
+import { BlockCommand } from "@/common/command";
 
-import Icon from "../../../../../../common/components/Icon";
+import Icon from "@/common/components/Icon";
 
 const BlockButton = props => {
 
